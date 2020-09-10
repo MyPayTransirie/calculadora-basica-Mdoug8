@@ -5,7 +5,7 @@
     <string name="btn_multiplicacao">*</string>
     <string name="btn_divisao">/</string>
     <string name="btn_calcular">=</string>
-    <string name="textEntrada"> Entre com o valor: </string>
+    <string name="textEntrada"> </string>
     <string name="btn_1">1</string>
     <string name="btn_2">2</string>
     <string name="btn_3">3</string>

@@ -7,18 +7,6 @@
     tools:context=".TelaCalculadora"
     tools:visibility="visible">
 
-    <EditText
-        android:id="@+id/inputValor"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/textEntrada"
-        android:inputType="number|textPersonName|text"
-        app:layout_constraintBottom_toTopOf="@+id/row"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/row"
         android:layout_width="414dp"
@@ -203,15 +191,26 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
         android:text="@string/mostrarValor"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/row"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputValor"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/inputValor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/textEntrada"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
