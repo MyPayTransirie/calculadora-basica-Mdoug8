@@ -4,55 +4,56 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_calculadora2.*
+import kotlinx.android.synthetic.main.activity_tela_calculadora.*
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
 
 class calculadora2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calculadora2)
+        setContentView(R.layout.activity_tela_calculadora)
 
         // Numbers
-        tvOne.setOnClickListener { appendOnExpression("1",true) }
-        tvTwo.setOnClickListener { appendOnExpression("2",true) }
-        tvThree.setOnClickListener { appendOnExpression("3",true) }
-        tvFour.setOnClickListener { appendOnExpression("4",true) }
-        tvFive.setOnClickListener { appendOnExpression("5",true) }
-        tvSix.setOnClickListener { appendOnExpression("6",true) }
-        tvSeven.setOnClickListener { appendOnExpression("7",true) }
-        tvEight.setOnClickListener { appendOnExpression("8",true) }
-        tvNine.setOnClickListener { appendOnExpression("9",true) }
-        tvZero.setOnClickListener { appendOnExpression("0",true) }
-        tvDot.setOnClickListener { appendOnExpression(".",true) }
+        btn_um.setOnClickListener { appendOnExpression("1",true) }
+        btn_dois.setOnClickListener { appendOnExpression("2",true) }
+        btn_tres.setOnClickListener { appendOnExpression("3",true) }
+        btn_quatro.setOnClickListener { appendOnExpression("4",true) }
+        btn_cinco.setOnClickListener { appendOnExpression("5",true) }
+        btn_seis.setOnClickListener { appendOnExpression("6",true) }
+        btn_sete.setOnClickListener { appendOnExpression("7",true) }
+        btn_oito.setOnClickListener { appendOnExpression("8",true) }
+        btn_nove.setOnClickListener { appendOnExpression("9",true) }
+        btn_zero.setOnClickListener { appendOnExpression("0",true) }
+        btn_ponto.setOnClickListener { appendOnExpression(".",true) }
 
         //operators
-        tvPlus.setOnClickListener { appendOnExpression("+",false) }
-        tvMinus.setOnClickListener { appendOnExpression("-",false) }
-        tvMul.setOnClickListener { appendOnExpression("*",false) }
-        tvDivide.setOnClickListener { appendOnExpression("/",false) }
-        tvOpen.setOnClickListener { appendOnExpression("(",false) }
-        tvClose.setOnClickListener { appendOnExpression(")",false) }
+        btn_soma.setOnClickListener { appendOnExpression("+",false) }
+        btn_subtracao.setOnClickListener { appendOnExpression("-",false) }
+        btn_multiplicacao.setOnClickListener { appendOnExpression("*",false) }
+        btn_divide.setOnClickListener { appendOnExpression("/",false) }
 
-        tvClear.setOnClickListener {
-            tvExpression.text=""
-            tvResult.text=""
-        }
-        tvBack.setOnClickListener {
-            val string = tvExpression.text.toString()
-            if(string.isNotEmpty()){
-                tvExpression.text = string.substring(0,string.length-1)
+        btn_delete.setOnClickListener {
+            if(!btn_delete.isLongClickable()){
+                val string = inputValor.text.toString()
+                if(string.isNotEmpty()){
+                    inputValor.text=string.substring(0,string.length-1)
+                }
             }
-            tvResult.text = ""
+            else{
+                inputValor.text=""
+                mostraValor.text=""
+            }
         }
-        tvEquals.setOnClickListener{
+
+        btn_calcular.setOnClickListener{
             try {
-                val expression = ExpressionBuilder(tvExpression.text.toString()).build()
+                val expression = ExpressionBuilder(inputValor.text.toString()).build()
                 val result = expression.evaluate()
                 val longResult = result.toLong()
                 if(result==longResult.toDouble())
-                    tvResult.text = longResult.toString()
+                    mostraValor.text = longResult.toString()
                 else
-                    tvResult.text = result.toString()
+                    mostraValor.text = result.toString()
 
             }catch (e:Exception){
                 Log.d("Exception","message :"+e.message)
@@ -63,18 +64,18 @@ class calculadora2 : AppCompatActivity() {
 
     }
     fun appendOnExpression(string : String, canClear:Boolean){
-        if(tvResult.text.isNotEmpty())
+        if(mostraValor.text.isNotEmpty())
         {
-            tvExpression.text= ""
+            inputValor.text= ""
         }
 
         if(canClear){
-            tvResult.text = ""
-            tvExpression.append(string)
+            mostraValor.text = ""
+            inputValor.append(string)
         }else{
-            tvExpression.append(tvResult.text)
-            tvExpression.append(string)
-            tvResult.text = ""
+            inputValor.append(mostraValor.text)
+            inputValor.append(string)
+            mostraValor.text = ""
 
 
         }
