@@ -2,10 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/black"
-    android:orientation="vertical">
+    style="@style/acaoVisor" >
     
     <TextView
         android:id="@+id/tvExpression"
@@ -21,11 +18,12 @@
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="100sp"
-        android:textColor="@color/numberButton"
-        android:gravity="end"
         android:ellipsize="end"
-        android:textSize="30sp"
-        android:singleLine="true"/>
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/numberButton"
+        android:textColorHighlight="#C3B9B9"
+        android:textSize="30sp" />
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -141,15 +139,18 @@
                 android:id="@+id/tvDot"
                 style="@style/NumberButtonStyle"
                 android:text="."/>
+
             <TextView
                 android:id="@+id/tvZero"
                 style="@style/NumberButtonStyle"
                 android:text="0"/>
+
             <ImageView
                 android:id="@+id/tvBack"
                 style="@style/NumberButtonStyle"
                 android:src="@drawable/backspace"
                 android:scaleType="center"/>
+
             <TextView
                 android:id="@+id/tvEquals"
                 style="@style/ActionButtonStyle"

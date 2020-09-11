@@ -6,6 +6,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="acaoVisor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/visorValor</item>
+        <item name="android:orientation">vertical</item>
+    </style>
     
     <style name="ActionButtonStyle">
         <item name="android:layout_width">0dp</item>

@@ -10,7 +10,7 @@ class TelaCalculadora : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_calculadora)
 
-
+      /*
         btn_0.setOnClickListener{
             inputValor.text= "${inputValor.text}${btn_0.text}"
 
@@ -74,7 +74,8 @@ class TelaCalculadora : AppCompatActivity() {
             }
 
         }
-
+       */
 
     }
+
 }
