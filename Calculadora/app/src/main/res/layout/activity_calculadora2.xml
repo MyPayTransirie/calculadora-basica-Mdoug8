@@ -43,14 +43,18 @@
                 android:id="@+id/tvOpen"
                 style="@style/NumberButtonStyle"
                 android:text="("/>
+
             <TextView
                 android:id="@+id/tvClose"
                 style="@style/NumberButtonStyle"
-                android:text=")"/>
+                android:background="#807A7A"
+                android:text=")" />
+
             <TextView
                 android:id="@+id/tvDivide"
                 style="@style/ActionButtonStyle"
-                android:text="/"/>
+                android:background="#6A6A6A"
+                android:text="/" />
 
 
         </LinearLayout>

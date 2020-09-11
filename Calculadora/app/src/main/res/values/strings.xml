@@ -17,9 +17,11 @@
     <string name="btn_9">9</string>
     <string name="restoDivisao">%</string>
     <string name="btn_0">0</string>
-    <string name="mostrarValor" />
+    <string name="inputValor"></string>
+    <string name="mostraValor"></string>
     <string name="btn_ponto">.</string>
     <string name="btn_delete">Del</string>
     <string name="btn_pi">π</string>
     <string name="btn_raiz">√</string>
+    <string name="btn_historico">Histórico</string>
 </resources>

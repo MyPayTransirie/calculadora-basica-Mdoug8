@@ -8,173 +8,189 @@
     tools:visibility="visible">
 
     <TextView
-        android:id="@+id/textView63"
-        style="@style/NumberButtonStyle"
+        android:id="@+id/btn_divide"
         android:layout_width="87dp"
         android:layout_height="85dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView62"
+        style="@style/ActionButtonStyle"
+        android:text="@string/btn_divisao"
+        app:layout_constraintBottom_toTopOf="@+id/btn_multiplicacao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView52"
-        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+        app:layout_constraintStart_toEndOf="@+id/btn_seis"
+        app:layout_constraintTop_toBottomOf="@+id/btn_delete" />
 
     <TextView
-        android:id="@+id/textView64"
-        style="@style/NumberButtonStyle"
+        android:id="@+id/btn_delete"
+        style="@style/ActionButtonStyle"
         android:layout_width="87dp"
         android:layout_height="83dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView63"
+        android:text="@string/btn_delete"
+        app:layout_constraintBottom_toTopOf="@+id/btn_divide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView51"
+        app:layout_constraintStart_toEndOf="@+id/btn_nove"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView4"
-        style="@style/NumberButtonStyle"
-        android:layout_width="120dp"
-        android:layout_height="47dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        android:id="@+id/btn_historico"
+        style="@style/ActionButtonStyle"
+        android:layout_width="124dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btn_historico"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sete"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
 
     <TextView
-        android:id="@+id/textView62"
-        style="@style/NumberButtonStyle"
+        android:id="@+id/btn_multiplicacao"
+        style="@style/ActionButtonStyle"
         android:layout_width="87dp"
         android:layout_height="85dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView61"
+        android:text="@string/btn_multiplicacao"
+        app:layout_constraintBottom_toTopOf="@+id/btn_subtracao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView53"
-        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+        app:layout_constraintStart_toEndOf="@+id/btn_tres"
+        app:layout_constraintTop_toBottomOf="@+id/btn_divide" />
 
     <TextView
-        android:id="@+id/textView51"
+        android:id="@+id/btn_nove"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView52"
-        app:layout_constraintEnd_toStartOf="@+id/textView64"
+        android:text="@string/btn_9"
+        app:layout_constraintBottom_toTopOf="@+id/btn_seis"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView47"
+        app:layout_constraintStart_toEndOf="@+id/btn_oito"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView55"
-        style="@style/NumberButtonStyle"
+        android:id="@+id/btn_soma"
+        style="@style/ActionButtonStyle"
         android:layout_width="87dp"
         android:layout_height="85dp"
+        android:text="@string/btn_soma"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView54"
-        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+        app:layout_constraintStart_toEndOf="@+id/btn_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/btn_subtracao" />
 
     <TextView
-        android:id="@+id/textView61"
-        style="@style/NumberButtonStyle"
+        android:id="@+id/btn_subtracao"
+        style="@style/ActionButtonStyle"
         android:layout_width="87dp"
         android:layout_height="85dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView55"
+        android:text="@string/btn_subtracao"
+        app:layout_constraintBottom_toTopOf="@+id/btn_soma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView54"
-        app:layout_constraintTop_toBottomOf="@+id/textView62" />
+        app:layout_constraintStart_toEndOf="@+id/btn_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/btn_multiplicacao" />
 
     <TextView
-        android:id="@+id/textView52"
+        android:id="@+id/btn_seis"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView53"
-        app:layout_constraintEnd_toStartOf="@+id/textView63"
+        android:text="@string/btn_6"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tres"
+        app:layout_constraintEnd_toStartOf="@+id/btn_divide"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView48"
-        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+        app:layout_constraintStart_toEndOf="@+id/btn_cinco"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nove" />
 
     <TextView
-        android:id="@+id/textView54"
+        android:id="@+id/btn_calcular"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
+        android:text="@string/btn_calcular"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView61"
+        app:layout_constraintEnd_toStartOf="@+id/btn_subtracao"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView50"
-        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+        app:layout_constraintStart_toEndOf="@+id/btn_zero"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tres" />
 
     <TextView
-        android:id="@+id/textView53"
+        android:id="@+id/btn_tres"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView54"
-        app:layout_constraintEnd_toStartOf="@+id/textView62"
+        android:text="@string/btn_3"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcular"
+        app:layout_constraintEnd_toStartOf="@+id/btn_multiplicacao"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView49"
-        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+        app:layout_constraintStart_toEndOf="@+id/btn_dois"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seis" />
 
     <TextView
-        android:id="@+id/textView47"
+        android:id="@+id/btn_oito"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView48"
-        app:layout_constraintEnd_toStartOf="@+id/textView51"
+        android:text="@string/btn_8"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cinco"
+        app:layout_constraintEnd_toStartOf="@+id/btn_nove"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/btn_sete"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView48"
+        android:id="@+id/btn_cinco"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView49"
-        app:layout_constraintEnd_toStartOf="@+id/textView52"
+        android:text="@string/btn_5"
+        app:layout_constraintBottom_toTopOf="@+id/btn_dois"
+        app:layout_constraintEnd_toStartOf="@+id/btn_seis"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView44"
-        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+        app:layout_constraintStart_toEndOf="@+id/btn_quatro"
+        app:layout_constraintTop_toBottomOf="@+id/btn_oito" />
 
     <TextView
-        android:id="@+id/textView50"
+        android:id="@+id/btn_zero"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
+        android:text="@string/btn_0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView54"
+        app:layout_constraintEnd_toStartOf="@+id/btn_calcular"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView46"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+        app:layout_constraintStart_toEndOf="@+id/btn_ponto"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dois" />
 
     <TextView
-        android:id="@+id/textView49"
+        android:id="@+id/btn_dois"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView50"
-        app:layout_constraintEnd_toStartOf="@+id/textView53"
+        android:text="@string/btn_2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_zero"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tres"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView45"
-        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+        app:layout_constraintStart_toEndOf="@+id/btn_um"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cinco" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/btn_sete"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView44"
-        app:layout_constraintEnd_toStartOf="@+id/textView47"
+        android:text="@string/btn_7"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quatro"
+        app:layout_constraintEnd_toStartOf="@+id/btn_oito"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -183,76 +199,64 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView45"
+        android:id="@+id/btn_um"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView46"
-        app:layout_constraintEnd_toStartOf="@+id/textView49"
+        android:text="@string/btn_1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ponto"
+        app:layout_constraintEnd_toStartOf="@+id/btn_dois"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_quatro" />
 
     <TextView
-        android:id="@+id/textView46"
+        android:id="@+id/btn_ponto"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
+        android:text="@string/btn_ponto"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView50"
+        app:layout_constraintEnd_toStartOf="@+id/btn_zero"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_um" />
 
     <TextView
-        android:id="@+id/textView44"
+        android:id="@+id/btn_quatro"
         style="@style/NumberButtonStyle"
         android:layout_width="103dp"
         android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintEnd_toStartOf="@+id/textView48"
+        android:text="@string/btn_4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_um"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cinco"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sete" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="413dp"
-        android:layout_height="131dp"
-        android:orientation="horizontal"
+    <TextView
+        android:id="@+id/inputValor"
+        android:layout_width="415dp"
+        android:layout_height="59dp"
+        android:text="@string/inputValor"
+        app:layout_constraintBottom_toTopOf="@+id/btn_historico"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="413dp"
-        android:layout_height="103dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textView47"
+    <TextView
+        android:id="@+id/mostraValor"
+        android:layout_width="117dp"
+        android:layout_height="40dp"
+        android:text="@string/mostraValor"
+        app:layout_constraintBottom_toTopOf="@+id/btn_historico"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/inputValor"
+        app:layout_constraintVertical_bias="0.462" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
